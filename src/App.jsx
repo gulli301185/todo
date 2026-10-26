@@ -4,11 +4,13 @@ import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 
 function App() {
-    const [data, setData] = useState([]);
+  console.log("Asem");
+
+  const [data, setData] = useState([]);
   return (
     <>
       <TodoForm data={data} setData={setData} />
-      <TodoList data={data}/>
+      <TodoList data={data} />
     </>
   );
 }
